@@ -480,6 +480,15 @@ p{
     margin-top: 2rem;
 }
 
+.contInfo a{
+    text-decoration: none;
+    color: #0D0D0D;
+}
+
+.contInfo:hover a{
+    color: white;
+}
+
 .contacIcono{
     background-color: #0D0D0D;
     color: #F25C05;
