@@ -335,7 +335,6 @@ p{
     width: 30%;
     display: flex;
     flex-direction: column;
-    /* height: 60%; */
     align-items: flex-start;
 }
 
@@ -536,3 +535,201 @@ p{
     font-size: 1rem;
 }
 
+
+/* corte #1 */
+@media screen and (max-width:990px){
+
+.cabecera{
+    height: 10vh;
+}
+
+.cajaSocial{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.itemSocial{
+    font-size: 1rem;    
+}
+
+.img__logo{
+    width: 100px;
+}
+
+.img__foto{
+    width: 70px;
+}
+
+.cajaLogo h2{
+    font-size: 0.9rem;
+}
+
+.cajaNav{
+    gap: 0.5rem;
+}
+
+.navtext{ 
+    font-size: 0.8rem;
+}
+
+/*Acerca*/
+
+.contenidoPrimario h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.contenidoPrimario h2{
+font-size: 1.3rem;
+}
+
+.contenidoPrimario p{
+    font-size: 1rem;
+}
+
+
+/* Antecedentes Laborales */
+
+.seccionAntecedentes{
+    padding-top: 10vh;
+}
+
+.tituloAntecedentes h2{
+    font-size: 2rem;
+}
+
+.contenedorAntecedentes{
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.tarjetaAntecedentes{
+    width: 100%;
+    height: 30%;
+    flex-direction: row;
+}
+
+.contImg{
+    width: 70%;
+    align-items: flex-end; 
+    padding-left: 5px;
+}
+
+.tarjetaImg{
+    width: 150px;
+}
+
+.cajaTitulo{
+    border-right: #96c93e solid 3px;
+    border-bottom: none;
+    height: 100%;
+    font-size: 1rem;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.contTexto p{
+    font-size: 0.7rem;
+}
+
+/*Formación académica*/
+
+.formacion{
+    padding-top: 8vh;
+}
+
+.tituloFormacion h2{
+    font-size: 1.8rem;   
+}
+
+.formacionDos h3{
+    font-size: 1rem;
+}
+
+.logosFormacion{
+    font-size: 2rem;
+}
+
+/*contacto*/
+
+.seccionFormulario{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 1rem;
+    row-gap: 0.8rem;
+    font-size: 1rem;
+    height: 93vh;
+}
+
+.tituloForm{
+    font-size: 1.3rem;
+}
+
+.formTexto p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.etiqueta{
+    font-size: 1rem;
+}
+
+.input-text{
+    font-size: 0.8rem;
+    height: 2.1rem;
+}
+
+.mensajeForm{
+    height: 5rem;
+    font-size: 0.8rem;
+}
+
+.boton{
+    height: 40px;
+    font-size: 0.8rem;
+}
+
+.contInfo h6{
+    margin-top: 1.5rem;
+}
+
+.contacIcono{
+    font-size: 1.5rem;
+}
+
+
+.mapaForm{
+    height: 75%;
+}
+
+.mapaTexto{
+    line-height: 1.2rem;
+}
+
+.mapaTexto p{
+    font-size: 0.7rem;
+}
+
+/* footer */
+.pie{
+    height: 7vh;
+}
+
+.pietext{
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+}
