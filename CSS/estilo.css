@@ -537,6 +537,7 @@ p{
 
 
 /* corte #1 */
+/*para notebook de hasta 1030px de ancho*/
 @media screen and (max-width:1030px){
 
 .cabecera{
@@ -556,11 +557,11 @@ p{
 }
 
 .img__logo{
-    width: 100px;
+    width: 50px;
 }
 
 .img__foto{
-    width: 70px;
+    width: 50px;
 }
 
 .cajaLogo h2{
@@ -619,7 +620,7 @@ font-size: 1.3rem;
 }
 
 .tarjetaImg{
-    width: 150px;
+    width: 100px;
 }
 
 .cajaTitulo{
