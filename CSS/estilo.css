@@ -13,114 +13,109 @@ h1, h2, h3, h4{
 
 h6{
     font-family: 'Rubik';
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
-
 }
 
 p{
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     color: #0D0D0D;
+    font-weight: 600;
 }
-
 
 /* Cabecera */
 
-
 .cabecera{
     display: flex;
-    position: fixed;
+    position: sticky;
     top: 0px;
-    left: 0px;
     background-color:#0D0D0D;
     align-content: center;
-    height: 100vh;
-    width: 220px;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    z-index: 100;
 }
-
 
 .cajaLogo{
     display: flex;
     align-items: center;
-    width: 100%;
-    margin-top: 1rem;
-    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 1rem;
+    flex-direction: row;
 }    
 
 .cajaSocial{
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     display: flex;
     flex-direction: row;
-    border-top: solid 3px #F25C05;
-    border-bottom: solid 3px #F25C05;
-    padding: 1rem;
-    justify-content: space-between;
+    column-gap: 1rem;
+    align-items: center;
 }
 
 .itemSocial{
     color: #F25C05;
     font-size: 1.5rem;
+    
 }
-
 
 .itemSocial:hover{
     color: #94BF75;
 }
 
-
 .img__logo{
-    width: 70%;
+    width: 130px;
+    max-width:100%;
+    height: auto;
 }
 
 .img__foto{
-    margin: 0.3rem;
-    width: 50%;
+    width: 110px;
     border-radius: 100px;
+    max-width: 100%;
+    height: auto;
 }
-
 
 .cajaLogo h2{
     color: white;
     font-size: 1.2rem;
     font-family: 'Rubik';
     font-weight: 100;
+    margin: 5px;
 }
 
 .cajaNav{
     display: flex;
     padding-left: 1rem;
     margin-right: 2rem;
-    margin-top: 50px;
     justify-content:space-between;
-    flex-direction: column;
-    gap: 3rem;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .navtext{ 
     color:white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     font-family: 'raleway';
     display: block;
 }
 
-
 .cajaNav a:hover{
     color: #94BF75;
 }
-
 
 /* Acerca */
 
 .seccionAcerca{
     background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("/Assets/imagenes/Foto_portada.jpg");
     background-repeat: no-repeat;
-    height:100vh;
+    height:95vh;
     width: 100%;
     display: flex;
     justify-content:flex-end;
@@ -128,17 +123,17 @@ p{
 }
 
 .contenidoPrimario{
-    width: 40%;
+    width: 50%;
     text-align: left;
     color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 1rem;
     margin-right: 10rem;
 }
 
 .contenidoPrimario p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color:white;
     text-align: left;
     margin-bottom: 2rem;
@@ -150,7 +145,6 @@ p{
 
 .contenidoPrimario h1{
     margin-bottom: 2rem;
-    border-left: solid #F25C05 3px;
     border-bottom: solid #F25C05 3px;
     font-size: 2.5rem;
     background-color: #000000;
@@ -172,13 +166,12 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 221px;
-    margin-bottom: 12vh;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 18vh;
 }
 
-
 .tituloAntecedentes{
-    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -191,33 +184,34 @@ p{
 }
 
 .contenedorAntecedentes{
-    height: 80vh;
-    width: 100%;
+    height: 70vh;
+    width: 80%;
     display: flex;
     justify-content: space-around;
+    align-content: flex-start;
     column-gap: 2rem;
 }
 
 .tarjetaAntecedentes{
     display: flex;
-    border: solid #F25C05 3px;
+    border: solid #F25C05 4px;
     border-radius: 25px;
-    width: 30%;
-    height: 95%;
+    width: 27%;
+    height: 85%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
 }
 
 .contImg{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center; 
 }
 
 .tarjetaImg{
-    max-width: 70%;
+    width: 200px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -228,7 +222,7 @@ p{
     display: flex;
     justify-content: center;
     font-family: 'Rubik';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
@@ -239,8 +233,11 @@ p{
 
 .contTexto p{
     width:100%;
-    font-size: 1.3rem;
-    margin: 1rem 1rem 0.5rem 2rem;
+    font-size: 0.8rem;
+    /* font-weight: 600; */
+    letter-spacing: 1.5px;
+    margin: 0.5rem;
+    line-height: 120%;
 }
 
 /*Formación académica*/
@@ -248,6 +245,7 @@ p{
 .formacion{
     display: flex;
     height: 100vh;
+    padding-top: 14vh;
 }
 
 .fotoFormacion{
@@ -268,7 +266,7 @@ p{
     align-items: flex-start;
     justify-content: flex-start;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1rem;
 }
 
 .formacionDos div{
@@ -277,10 +275,11 @@ p{
 }
 
 .formacionDos p{
-    font-size: 1.3rem;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
+
 .tituloFormacion{
     align-items: center;
     padding: 1rem;
@@ -290,63 +289,59 @@ p{
 }
 
 .tituloFormacion h2{
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #0D0D0D;
     font-family: 'Rubik',sans-serif;
     border-bottom: #F25C05 solid 3px;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
 }
 
-
 .programacion{
-    height: 50%;
+    height: 45%;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .formacionDos h3{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     border-bottom: #96c93e solid 2px;
+    padding-bottom: .5rem;
     margin: 0.5rem;
-    padding: 0.5rem;
 }
-
 
 .logosFormacion{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: gray;
 }
 
-
-
-/*formulario*/
+/*contacto*/
 
 .seccionFormulario{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     margin-bottom: 1rem;
-    margin-left: 220px;
-    padding-top: 2rem;
+    padding-top: 3rem;
     row-gap: 1rem;
     font-size: 1.1rem;
-    height: 100vh;
+    height: 70vh;
 }
 
 .formIzquierda{
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    height: 85vh;
-    align-items: center;
+    /* height: 60%; */
+    align-items: flex-start;
 }
 
 .tituloForm{
     border-bottom: #96c93e solid 3px;
-    width: 80%;
+    width: 100%;
     display: flex;
     height: 10%;
     font-family: 'Rubik';
@@ -358,25 +353,23 @@ p{
 .formTexto{
     display: flex;
     height: 20%;
-    width: 80%;
-    padding: 1rem 0 0 2rem;
+    width: 100%;
+    padding: 0.5rem 0 0 1rem;
     
 }
 
 .formTexto p{
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
 .formu{
     display: flex;
-    height: 75vh;
+    height: 80%;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     justify-content: flex-start;
-
-
 }
 
 .etiqueta{
@@ -386,16 +379,15 @@ p{
     font-size: 1.2rem;
 }
 
-
 .input-text{
     width: 100%;
     font-size: 1rem;
     border: #F25C05 3px solid;
-    margin-bottom: 2rem;
-    height: 3rem;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    height: 2.5rem;
     outline: none;
     border-radius: 5px;
-    padding-left: 1rem;
 }
 
 .input-text:focus{
@@ -406,14 +398,14 @@ p{
 
 .mensajeForm{
     resize: none;
-    height: 150px;
+    height: 6rem;
     width: 100%;
     font-size: 1rem;
     border: #F25C05 3px solid;
     outline: none;
     border-radius: 5px;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .mensajeForm:focus{
@@ -427,10 +419,10 @@ p{
     border: solid 3px #96c93e;
     border-radius: 5px;
     color: #0D0D0D;
-    height: 50px;
-    width: 20%;
+    height: 45px;
+    width: 30%;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -440,16 +432,13 @@ p{
     border: #F25C05 solid 3px;
 }
 
-
 .formDerecha{
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     height: 85vh;
     padding: 20px;
 }
-
-
 
 .datosForm{
     display: flex;
@@ -458,7 +447,7 @@ p{
 }
 
 .contInfo{
-    padding: 2rem;
+    padding: 1rem;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -493,57 +482,52 @@ p{
     background-color: #0D0D0D;
     color: #F25C05;
     font-size: 2rem;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 25px;
-
 }
-
-
-
-
 
 .contMapa{
     display: flex;
     flex-direction: column;
-    height: 100%;
     align-items: center;
+    height: 50%;
 }
 
 .mapaForm{
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 85%;
     display: flex;
     justify-content: center;
 }
 
 .mapaTexto{
     display: flex;
-    width: 90%;
-    height: 30%;
+    width: 100%;
+    height: 15%;
     align-items: center;
     letter-spacing: 1px;
     line-height: 1.5rem;
+    justify-content: center;
 }
 
 .mapaTexto p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
-
 /* footer */
-
 .pie{
     background-color: #022601;
     display: flex;
     padding: 1rem;
     width:100%;
-    align-items:flex-start;
+    align-items:center;
+    /* justify-content: center; */
     position: fixed;
-    left: 220px;
     bottom: 0;
-    height: 6vh;
-    width: 1600px;
+    height: 8vh;
+    width: 100%;
+    z-index: 50;
 }
 
 .pietext{ 
@@ -551,6 +535,4 @@ p{
     text-decoration: none;
     font-size: 1rem;
 }
-
-
 
