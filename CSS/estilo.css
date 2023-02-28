@@ -557,11 +557,11 @@ p{
 }
 
 .img__logo{
-    width: 50px;
+    width: 45px;
 }
 
 .img__foto{
-    width: 50px;
+    width: 45px;
 }
 
 .cajaLogo h2{
@@ -620,7 +620,7 @@ font-size: 1.3rem;
 }
 
 .tarjetaImg{
-    width: 100px;
+    width: 60px;
 }
 
 .cajaTitulo{
@@ -724,12 +724,11 @@ font-size: 1.3rem;
 .pietext{
     font-size: 0.7rem;
 }
+}
 
-
-
-
-
-
+/* corte #2 */
+/*para celular de hasta 767pxpx de ancho*/
+@media screen and (max-width:767px){
 
 
 
