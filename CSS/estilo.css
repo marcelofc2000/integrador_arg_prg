@@ -118,7 +118,7 @@ img{
 /* Acerca */
 
 .seccionAcerca{
-    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("./Assets/imagenes/Foto_portada.jpg");
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../Assets/imagenes/Foto_portada.jpg");
     background-repeat: no-repeat;
     height:95vh;
     width: 100%;
